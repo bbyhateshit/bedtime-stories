@@ -15,14 +15,14 @@ public class BedTimeStories {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
 
             String line;
-            int lineNumber = 1;
+
 
             while ((line = reader.readLine()) != null) {
-                System.out.println(lineNumber + ". " + line);
+
+                System.out.println(line);
 
                 Thread.sleep(500);
 
-                lineNumber++;
             }
 
             reader.close();
