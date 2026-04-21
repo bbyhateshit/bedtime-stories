@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,7 +14,7 @@ public class BedTimeStories {
         String fileName = scanner.nextLine();
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/" + fileName));
 
             String line;
 
